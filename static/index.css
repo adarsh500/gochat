@@ -3,7 +3,7 @@ body {
   height: 100%;
   background: rgb(180, 232, 248);
   font-family: nunito-sans, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
 }
 #container {
@@ -14,7 +14,6 @@ body {
   height: 720px;
 }
 #log {
-  /* display: flex; */
   background: hsl(0, 9%, 94%);
   margin: 1em;
   padding: 1.5em;
@@ -27,13 +26,14 @@ body {
 
 form {
   display: flex;
-  width: 48%;
+  width: 40%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0 1.5em;
 }
 
-msg {
+input[type = text] {
   display: flex;
   border: 2px solid rgb(17, 65, 168);
   appearance: none;
@@ -41,7 +41,7 @@ msg {
   -webkit-appearance: none;
   padding: 14px;
   border-radius: 20px;
-  width: 500px;
+  width: 75%;
   margin-right: 10px;
   box-shadow: 3px 3px 9px rgb(97, 97, 97);
 }
@@ -74,6 +74,13 @@ button {
 
 @media screen and (max-width: 800px) {
   .input {
-    width: 50%;
+    width: 40%;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .input {
+    width: 70%;
+  }
+}
+
